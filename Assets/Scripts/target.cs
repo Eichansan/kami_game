@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class target : MonoBehaviour
 {
-    private int Lock = 1;
+    public static int Lock = 1;
     int b = 0;
     int score = 0;
     int type = 0;
@@ -47,8 +47,8 @@ public class target : MonoBehaviour
                     if (Lock == b)
                     {
                         score = score + 1;
-                        Debug.Log("score is " + score);
-                        Card.sw = 5;
+                        //Debug.Log("score is " + score);
+                        
                     }
                     else
                     {
@@ -59,13 +59,13 @@ public class target : MonoBehaviour
                 {
                     if (Lock == b)
                     {
-                        score = score + 1;
-                        Debug.Log("score is " + score);
-                        Card.sw = 5;
+                        //score = score + 1;
+                        //Debug.Log("score is " + score);
+                        
                     }
                     else
                     {
-                        Card.sw = 5;
+                        
                     }
                 }
                 if (cursor % 3 == 0)
@@ -145,13 +145,13 @@ public class target : MonoBehaviour
                 {
                     if (Lock == b)
                     {
-                        score = score + 1;
-                        Debug.Log("score is " + score);
-                        Card.sw = 5;
+                        //score = score + 1;
+                        //Debug.Log("score is " + score);
+                        
                     }
                     else
                     {
-                        Card.sw = 5;
+                        
                     }
                 }
             }
