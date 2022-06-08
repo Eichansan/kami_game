@@ -70,7 +70,7 @@ public class target : MonoBehaviour
                 }
                 if (cursor % 3 == 0)
                 {
-                    this.transform.localPosition = new Vector3(490, -170, 0);
+                    this.transform.localPosition = new Vector3(490, 330, 0);
                     if (Lock != 2)
                     {
                         Lock = 2;
@@ -80,7 +80,7 @@ public class target : MonoBehaviour
                 else if (cursor % 3 == 1)
                 {
 
-                    this.transform.localPosition = new Vector3(0, -170, 0);
+                    this.transform.localPosition = new Vector3(0, 330, 0);
                     if (Lock != 1)
                     {
                         Lock = 1;
@@ -90,7 +90,7 @@ public class target : MonoBehaviour
                 else if (cursor % 3 == 2)
                 {
 
-                    this.transform.localPosition = new Vector3(-490, -170, 0);
+                    this.transform.localPosition = new Vector3(-490, 330, 0);
                     if (Lock != 3)
                     {
                         Lock = 3;
@@ -106,7 +106,7 @@ public class target : MonoBehaviour
                 }
                 if (Input.GetKey(KeyCode.RightArrow))
                 {
-                    this.transform.localPosition = new Vector3(490, -170, 0);
+                    this.transform.localPosition = new Vector3(490, 330, 0);
                     if (Lock != 2)
                     {
                         Lock = 2;
@@ -115,7 +115,7 @@ public class target : MonoBehaviour
                 }
                 if (Input.GetKey(KeyCode.UpArrow))
                 {
-                    this.transform.localPosition = new Vector3(0, -170, 0);
+                    this.transform.localPosition = new Vector3(0, 330, 0);
                     if (Lock != 1)
                     {
                         Lock = 1;
@@ -124,7 +124,7 @@ public class target : MonoBehaviour
                 }
                 if (Input.GetKey(KeyCode.DownArrow))
                 {
-                    this.transform.localPosition = new Vector3(0, -170, 0);
+                    this.transform.localPosition = new Vector3(0, 330, 0);
                     if (Lock != 1)
                     {
                         Lock = 1;
@@ -133,7 +133,7 @@ public class target : MonoBehaviour
                 }
                 if (Input.GetKey(KeyCode.LeftArrow))
                 {
-                    this.transform.localPosition = new Vector3(-490, -170, 0);
+                    this.transform.localPosition = new Vector3(-490, 330, 0);
                     if (Lock != 3)
                     {
                         Lock = 3;
