@@ -5,6 +5,7 @@ using UnityEngine;
 public class Judge : MonoBehaviour
 {
     //変数の宣言
+    int cnt = 0;
     [SerializeField] private GameObject[] MessageObj;//プレイヤーに判定を伝えるゲームオブジェクト
     [SerializeField] NotesManager notesManager;
     void Update()
@@ -55,6 +56,7 @@ public class Judge : MonoBehaviour
         if (timeLag <= 0.10)//本来ノーツをたたくべき時間と実際にノーツをたたいた時間の誤差が0.1秒以下だったら
         {
             Debug.Log("Perfect");
+            Debug.Log(count(100));
             message(0);
             deleteData();
         }
@@ -63,6 +65,7 @@ public class Judge : MonoBehaviour
             if (timeLag <= 0.15)//本来ノーツをたたくべき時間と実際にノーツをたたいた時間の誤差が0.15秒以下だったら
             {
                 Debug.Log("Great");
+                Debug.Log(count(50));
                 message(1);
                 deleteData();
             }
@@ -71,6 +74,7 @@ public class Judge : MonoBehaviour
                 if (timeLag <= 0.20)//本来ノーツをたたくべき時間と実際にノーツをたたいた時間の誤差が0.2秒以下だったら
                 {
                     Debug.Log("Good");
+                    Debug.Log(count(20));
                     message(2);
                     deleteData();
                 }
@@ -98,5 +102,11 @@ public class Judge : MonoBehaviour
     void message(int judge)//判定を表示する
     {
         Instantiate(MessageObj[judge],new Vector3(notesManager.LaneNum[0]+1.25f,0.76f,0.15f),Quaternion.Euler(45,0,0));
+    }
+
+    int count(int plus)
+    {   
+        cnt = cnt + plus;
+        return cnt;
     }
 }
