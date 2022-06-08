@@ -1053,7 +1053,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1438108826}
-  - component: {fileID: 1438108825}
+  - component: {fileID: 1438108827}
   m_Layer: 0
   m_Name: NotesManager
   m_TagString: Untagged
@@ -1061,26 +1061,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1438108825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1438108824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0fed8922f58ca84e9dad5cdb85abd88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  notez: 0
-  noteNum: 0
-  LaneNum: 
-  NoteType: 
-  NotesTime: []
-  NotesObj: []
-  NotesSpeed: 8
-  noteObj: {fileID: 2859754554783166282, guid: 0a6c4004c804a6046b7d617b723835a8, type: 3}
 --- !u!4 &1438108826
 Transform:
   m_ObjectHideFlags: 0
@@ -1096,6 +1076,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1438108827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438108824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0fed8922f58ca84e9dad5cdb85abd88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  noteNum: 0
+  LaneNum: 
+  NoteType: 
+  NotesTime: []
+  NotesObj: []
+  NotesSpeed: 8
+  noteObj: {fileID: 2859754554783166282, guid: 0a6c4004c804a6046b7d617b723835a8, type: 3}
 --- !u!1 &1550278210
 GameObject:
   m_ObjectHideFlags: 0
@@ -1366,7 +1365,7 @@ MonoBehaviour:
   - {fileID: 8271520317862763965, guid: 3ece4e3e038b4dc4482f7f30ebd4176a, type: 3}
   - {fileID: 7679777070237910124, guid: 79ff9f8087a62e242823a3c64552d1f4, type: 3}
   - {fileID: 1257997340609345531, guid: e399fb48a6bc6f048bd25b0159ba1afe, type: 3}
-  notesManager: {fileID: 1438108825}
+  notesManager: {fileID: 1438108827}
 --- !u!1001 &1709635794
 PrefabInstance:
   m_ObjectHideFlags: 0
