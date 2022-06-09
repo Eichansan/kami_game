@@ -1393,6 +1393,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1438108826}
   - component: {fileID: 1438108827}
+  - component: {fileID: 1438108828}
   m_Layer: 0
   m_Name: NotesManager
   m_TagString: Untagged
@@ -1434,6 +1435,22 @@ MonoBehaviour:
   NotesObj: []
   NotesSpeed: 8
   noteObj: {fileID: 2859754554783166282, guid: 0a6c4004c804a6046b7d617b723835a8, type: 3}
+--- !u!114 &1438108828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438108824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05e9ab57528818442ba36cb67c490877, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstText: {fileID: 0}
+  secondText: {fileID: 0}
+  thirdText: {fileID: 0}
+  voice: 0
 --- !u!114 &1455308603 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 654475903, guid: 6a7faa447acb8024ca240ed0dad7f4cc, type: 3}
