@@ -73,45 +73,55 @@ public class NotesManager : MonoBehaviour
             Card card = GetComponent<Card>();
             a = card.voice;
             Debug.Log("a is " + a);
-
+            
             if (a == 0)
             {
-                songName = "夜に駆ける";
+                songName = "H1";
                 OnEnable();
             }
             else if (a == 1)
             {
-                songName = "夜に駆ける";
+                songName = "H2";
                 OnEnable();
             }
             else if (a == 2)
             {
-                songName = "夜に駆ける";
+                songName = "H3";
                 OnEnable();
             }
             else if (a == 3)
             {
-                songName = "夜に駆ける";
+                songName = "H4";
                 OnEnable();
             }
             else if (a == 4)
             {
-                songName = "夜に駆ける";
+                songName = "H5";
                 OnEnable();
             }
             else if (a == 5)
             {
-                songName = "夜に駆ける";
+                songName = "H6";
                 OnEnable();
             }
             else if (a == 6)
             {
-                songName = "夜に駆ける";
+                songName = "H7";
                 OnEnable();
             }
             else if (a == 7)
             {
-                songName = "夜に駆ける";
+                songName = "H8";
+                OnEnable();
+            }
+            else if (a == 8)
+            {
+                songName = "H9";
+                OnEnable();
+            }
+            else if (a == 9)
+            {
+                songName = "H10";
                 OnEnable();
             }
 

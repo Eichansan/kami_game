@@ -12,6 +12,8 @@ public class awnswer : MonoBehaviour
     public AudioClip soundF;
     public AudioClip soundG;
     public AudioClip soundH;
+    public AudioClip soundI;
+    public AudioClip soundJ;
     AudioSource audioSource;
     private int a = 0;
 
@@ -74,6 +76,18 @@ public class awnswer : MonoBehaviour
                 
                 
             }
+            else if (a == 8)
+            {
+                audioSource.PlayOneShot(soundI);
+
+
+            }
+            else if (a == 9)
+            {
+                audioSource.PlayOneShot(soundJ);
+
+
+            }
             Card.sw = 3;
             StartCoroutine("Wait");
 
@@ -86,7 +100,7 @@ public class awnswer : MonoBehaviour
     }
     IEnumerator Wait()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(11);
         Card.sw = 5;
     }
     

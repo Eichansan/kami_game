@@ -683,13 +683,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 443703499}
     m_Modifications:
+    - target: {fileID: 654475903, guid: 6a7faa447acb8024ca240ed0dad7f4cc, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 826090299799166165, guid: 6a7faa447acb8024ca240ed0dad7f4cc, type: 3}
       propertyPath: m_Name
       value: karuta 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7325238423779740425, guid: 6a7faa447acb8024ca240ed0dad7f4cc, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7498639169771364134, guid: 6a7faa447acb8024ca240ed0dad7f4cc, type: 3}
       propertyPath: m_Pivot.x
@@ -1153,10 +1153,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 443703499}
     m_Modifications:
-    - target: {fileID: 654475903, guid: 6a7faa447acb8024ca240ed0dad7f4cc, type: 3}
-      propertyPath: m_text
-      value: c
-      objectReference: {fileID: 0}
     - target: {fileID: 826090299799166165, guid: 6a7faa447acb8024ca240ed0dad7f4cc, type: 3}
       propertyPath: m_Name
       value: karuta 3
@@ -1393,6 +1389,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1438108826}
   - component: {fileID: 1438108827}
+  - component: {fileID: 1438108828}
   m_Layer: 0
   m_Name: NotesManager
   m_TagString: Untagged
@@ -1434,6 +1431,22 @@ MonoBehaviour:
   NotesObj: []
   NotesSpeed: 8
   noteObj: {fileID: 2859754554783166282, guid: 0a6c4004c804a6046b7d617b723835a8, type: 3}
+--- !u!114 &1438108828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438108824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05e9ab57528818442ba36cb67c490877, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstText: {fileID: 0}
+  secondText: {fileID: 0}
+  thirdText: {fileID: 0}
+  voice: 0
 --- !u!114 &1455308603 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 654475903, guid: 6a7faa447acb8024ca240ed0dad7f4cc, type: 3}
@@ -1669,10 +1682,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 443703499}
     m_Modifications:
-    - target: {fileID: 654475903, guid: 6a7faa447acb8024ca240ed0dad7f4cc, type: 3}
-      propertyPath: m_text
-      value: b
-      objectReference: {fileID: 0}
     - target: {fileID: 826090299799166165, guid: 6a7faa447acb8024ca240ed0dad7f4cc, type: 3}
       propertyPath: m_Name
       value: karuta 2
@@ -1905,14 +1914,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed30f0fa83e1e6242b6dfa4269a5d501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundA: {fileID: 8300000, guid: f97bc38478856b74d9c20610b33c1590, type: 3}
-  soundB: {fileID: 8300000, guid: 731b039f0b330614089a6af535a3be15, type: 3}
-  soundC: {fileID: 8300000, guid: a2746d97f7c80ac46b4587ed0ac0888a, type: 3}
-  soundD: {fileID: 8300000, guid: ccb03054276212a409cc395fd456d2fb, type: 3}
-  soundE: {fileID: 8300000, guid: 5ba8fd70858955b40a920d0bb414b29f, type: 3}
-  soundF: {fileID: 8300000, guid: 01168cbcef6a6624ca914176ff94fd04, type: 3}
-  soundG: {fileID: 8300000, guid: b1934d53e9ff2484b9030aafd931875f, type: 3}
-  soundH: {fileID: 8300000, guid: 94835d0cb6d45eb4bac6dfc25e4dbf76, type: 3}
+  soundA: {fileID: 8300000, guid: 90a00c4deed4cb74db193baa5804c22a, type: 3}
+  soundB: {fileID: 8300000, guid: cbb69e2b71447e54687b4bfe8d8859e5, type: 3}
+  soundC: {fileID: 8300000, guid: bd73de05b3b63554eb3ea61372458d21, type: 3}
+  soundD: {fileID: 8300000, guid: f4d0da21fa4706241975130bbb993fbe, type: 3}
+  soundE: {fileID: 8300000, guid: e3f414572739cd540a83cd64cb7d4bc4, type: 3}
+  soundF: {fileID: 8300000, guid: 346c44e59ea00e8449dfc9213a2cc60e, type: 3}
+  soundG: {fileID: 8300000, guid: b42075dcd94ac60479369713a1f98733, type: 3}
+  soundH: {fileID: 8300000, guid: 76fd7265721190a4abd5aa063d31d517, type: 3}
+  soundI: {fileID: 8300000, guid: 915dc6cba43878f428591e63df78baaf, type: 3}
+  soundJ: {fileID: 8300000, guid: cae834c90261f1a40ba8e0889434d08b, type: 3}
 --- !u!114 &1689006996
 MonoBehaviour:
   m_ObjectHideFlags: 0

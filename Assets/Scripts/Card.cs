@@ -48,36 +48,49 @@ public class Card : MonoBehaviour
         {
             if (save[I] == 0)
             {
-                card[I] = "a";
+                card[I] = "ぬてをれはかつつこつゆろ　にも";
             }
             else if (save[I] == 1)
             {
-                card[I] = "b";
+                card[I] = "かてこくふろやあもままほ　のす";
+
             }
             else if (save[I] == 2)
             {
-                card[I] = "c";
+                card[I] = "かよなもをかねひなむとか　りし";
             }
             else if (save[I] == 3)
             {
-                card[I] = "d";
+                card[I] = "ふねふりにしつゆのつきた　はか";
             }
             else if (save[I] == 4)
             {
-                card[I] = "e";
+                card[I] = "かきこなそゑしあきききく　はと";
             }
             else if (save[I] == 5)
             {
-                card[I] = "f";
+                card[I] = "けれしにはろけよきるそを　ふみ";
             }
             else if (save[I] == 6)
             {
-                card[I] = "g";
+                card[I] = "つまみきにかかいさもての　しや";
             }
-            else {
-                card[I] = "h";
-            }     
-        }
+            else if (save[I] == 7)
+            {
+                card[I] = "いまよふとをなひうりとち　はや";
+            }
+
+            else if (save[I] == 8)
+            {
+                card[I] = "せふわしるかまなみにかよ　めに";
+            }
+            else if (save[I] == 9)
+            {
+                card[I] = "かぬしのもるせあもきふし　さら";
+            }
+            
+
+            }
 
         firstText.text = card[0];
         secondText.text = card[1];
@@ -105,6 +118,7 @@ public class Card : MonoBehaviour
         //Debug.Log("voice is " + voice);
         Debug.Log("letter is " + letter);
         sw = 1;
+        
     }
 
     // Update is called once per frame
@@ -131,36 +145,47 @@ public class Card : MonoBehaviour
             {
                 if (save[I] == 0)
                 {
-                    card[I] = "a";
+                    card[I] = "ぬてをれはかつつこつゆろ　にも";
                 }
                 else if (save[I] == 1)
                 {
-                    card[I] = "b";
+                    card[I] = "かてこくふろやあもままほ　のす";
+
                 }
                 else if (save[I] == 2)
                 {
-                    card[I] = "c";
+                    card[I] = "かよなもをかねひなむとか　りし";
                 }
                 else if (save[I] == 3)
                 {
-                    card[I] = "d";
+                    card[I] = "ふねふりにしつゆのつきた　はか";
                 }
                 else if (save[I] == 4)
                 {
-                    card[I] = "e";
+                    card[I] = "かきこなそゑしあきききく　はと";
                 }
                 else if (save[I] == 5)
                 {
-                    card[I] = "f";
+                    card[I] = "けれしにはろけよきるそを　ふみ";
                 }
                 else if (save[I] == 6)
                 {
-                    card[I] = "g";
+                    card[I] = "つまみきにかかいさもての　しや";
                 }
-                else
+                else if (save[I] == 7)
                 {
-                    card[I] = "h";
+                    card[I] = "いまよふとをなひうりとち　はや";
                 }
+
+                else if (save[I] == 8)
+                {
+                    card[I] = "せふわしるかまなみにかよ　めに";
+                }
+                else if (save[I] == 9)
+                {
+                    card[I] = "かぬしのもるせあもきふし　さら";
+                }
+                
             }
 
             firstText.text = card[0];
@@ -191,6 +216,10 @@ public class Card : MonoBehaviour
             //Debug.Log("voice is " + voice);
             Debug.Log("letter is " + letter);
             sw = 1;
+            
+            
         }
+        
     }
+    
 }
