@@ -6,6 +6,8 @@ public class Judge : MonoBehaviour
 {
     //変数の宣言
     int cnt = 0;
+    /*int miss = 0;
+    [SerializeField] private GameObject[] GameOverObj;*/
     [SerializeField] private GameObject[] MessageObj;//プレイヤーに判定を伝えるゲームオブジェクト
     [SerializeField] NotesManager notesManager;
     void Update()
@@ -48,8 +50,15 @@ public class Judge : MonoBehaviour
             message(3);
             deleteData();
             Debug.Log("Miss");
-            
+            /*misscount();*/
+
+            /*if(miss == 5)
+        {
+            Instantiate(GameOverObj,new Vector3(notesManager.LaneNum[0]+1.25f,0.76f,0.15f),Quaternion.Euler(45,0,0));
+        }*/
         }
+        
+        
     }
     void Judgement(float timeLag)
     {
@@ -109,4 +118,12 @@ public class Judge : MonoBehaviour
         cnt = cnt + plus;
         return cnt;
     }
+
+    /*int misscount()
+    {   
+        miss = miss + 1;
+        return miss;
+    }*/
+
+    
 }
