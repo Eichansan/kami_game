@@ -12,54 +12,54 @@ public class Judge : MonoBehaviour
     [SerializeField] NotesManager notesManager;
     void Update()
     {
-        
-        if (Input.GetKeyDown(KeyCode.D))
-        {
+
+            if (Input.GetKeyDown(KeyCode.D))
+            {
+            
             if (notesManager.LaneNum[0] == 0)
-            {
-                Judgement(GetABS(Time.time - notesManager.NotesTime[0]));
-                /*
-                本来ノーツをたたく場所と実際にたたいた場所がどれくらいずれているかを求め、
-                その絶対値をJudgement関数に送る
-                */
+                {
+                    Judgement(GetABS(Time.time - notesManager.NotesTime[0]));
+                    /*
+                    本来ノーツをたたく場所と実際にたたいた場所がどれくらいずれているかを求め、
+                    その絶対値をJudgement関数に送る
+                    */
+                }
             }
-        }
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            if (notesManager.LaneNum[0] == 1)
+            if (Input.GetKeyDown(KeyCode.F))
             {
-                Judgement(GetABS(Time.time - notesManager.NotesTime[0]));
+                if (notesManager.LaneNum[0] == 1)
+                {
+                    Judgement(GetABS(Time.time - notesManager.NotesTime[0]));
+                }
             }
-        }
-        if (Input.GetKeyDown(KeyCode.J))
-        {
-            if (notesManager.LaneNum[0] == 2)
+            if (Input.GetKeyDown(KeyCode.J))
             {
-                Judgement(GetABS(Time.time - notesManager.NotesTime[0]));
+                if (notesManager.LaneNum[0] == 2)
+                {
+                    Judgement(GetABS(Time.time - notesManager.NotesTime[0]));
+                }
             }
-        }
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            if (notesManager.LaneNum[0] == 3)
+            if (Input.GetKeyDown(KeyCode.K))
             {
-                Judgement(GetABS(Time.time - notesManager.NotesTime[0]));
+                if (notesManager.LaneNum[0] == 3)
+                {
+                    Judgement(GetABS(Time.time - notesManager.NotesTime[0]));
+                }
             }
-        }
 
-        if (Time.time > notesManager.NotesTime[0] + 0.2f)//本来ノーツをたたくべき時間から0.2秒たっても入力がなかった場合
-        {
-            message(3);
-            deleteData();
-            Debug.Log("Miss");
-            /*misscount();
+            if (Time.time > notesManager.NotesTime[0] + 0.2f)//本来ノーツをたたくべき時間から0.2秒たっても入力がなかった場合
+            {
+                message(3);
+                deleteData();
+                //Debug.Log("Miss");
+                /*misscount();
 
-            if(miss == 5)
-        {
-            Instantiate(GameOverObj,new Vector3(notesManager.LaneNum[0]+1.25f,0.76f,0.15f),Quaternion.Euler(45,0,0));
-        }*/
+                if(miss == 5)
+                {
+                    Instantiate(GameOverObj,new Vector3(notesManager.LaneNum[0]+1.25f,0.76f,0.15f),Quaternion.Euler(45,0,0));
+                }*/
 
-        }
-        
+            }
         
     }
     void Judgement(float timeLag)

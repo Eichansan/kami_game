@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class awnswer : MonoBehaviour
 {
@@ -33,7 +34,8 @@ public class awnswer : MonoBehaviour
             audioSource = GetComponent<AudioSource>();
             Card card = GetComponent<Card>();
             a = card.voice;
-            //Debug.Log("a is " + a);
+
+            Debug.Log("a is " + a);
 
             if (a == 0)
             {//‰¹(soundA)‚ð–Â‚ç‚·
@@ -101,7 +103,7 @@ public class awnswer : MonoBehaviour
     IEnumerator Wait()
     {
         yield return new WaitForSeconds(11);
-        Card.sw = 5;
+        SceneManager.LoadScene(0);
     }
     
 }

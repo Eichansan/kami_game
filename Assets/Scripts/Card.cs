@@ -213,7 +213,7 @@ public class Card : MonoBehaviour
                 letter = card[2];
             }
             //Debug.Log("awnswer is " + answer);
-            //Debug.Log("voice is " + voice);
+            Debug.Log("voice is " + voice);
             Debug.Log("letter is " + letter);
             sw = 1;
             
