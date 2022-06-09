@@ -37,8 +37,10 @@ public class NotesManager : MonoBehaviour
 
     void OnEnable()
     {
+        
         noteNum = 0;
         Load(songName);
+        
     }
 
     private void Load(string SongName)
@@ -66,101 +68,58 @@ public class NotesManager : MonoBehaviour
     {
         if (Card.sw == 1)
         {
-            
+            Debug.Log("swich is" + Card.sw);
+
             Card card = GetComponent<Card>();
             a = card.voice;
-            //Debug.Log("a is " + a);
+            Debug.Log("a is " + a);
 
             if (a == 0)
-            {//音(soundA)を鳴らす
-                songName = "0";
+            {
+                songName = "夜に駆ける";
                 OnEnable();
             }
             else if (a == 1)
             {
-                songName = "1";
+                songName = "夜に駆ける";
                 OnEnable();
             }
             else if (a == 2)
             {
-                songName = "2";
+                songName = "夜に駆ける";
                 OnEnable();
             }
             else if (a == 3)
             {
-                songName = "3";
+                songName = "夜に駆ける";
                 OnEnable();
             }
             else if (a == 4)
             {
-                songName = "4";
+                songName = "夜に駆ける";
                 OnEnable();
             }
             else if (a == 5)
             {
-                songName = "5";
+                songName = "夜に駆ける";
                 OnEnable();
             }
             else if (a == 6)
             {
-                songName = "6";
+                songName = "夜に駆ける";
                 OnEnable();
             }
             else if (a == 7)
             {
-                songName = "7";
+                songName = "夜に駆ける";
                 OnEnable();
             }
-            
+
+            Card.sw = 2;
+
 
         }
 
-        if (Card.sw == 4)
-        {
-            Card card = GetComponent<Card>();
-            a = card.voice;
-            //Debug.Log("a is " + a);
 
-            if (a == 0)
-            {//音(soundA)を鳴らす
-                songName = "0";
-                OnEnable();
-            }
-            else if (a == 1)
-            {
-                songName = "1";
-                OnEnable();
-            }
-            else if (a == 2)
-            {
-                songName = "2";
-                OnEnable();
-            }
-            else if (a == 3)
-            {
-                songName = "3";
-                OnEnable();
-            }
-            else if (a == 4)
-            {
-                songName = "4";
-                OnEnable();
-            }
-            else if (a == 5)
-            {
-                songName = "5";
-                OnEnable();
-            }
-            else if (a == 6)
-            {
-                songName = "6";
-                OnEnable();
-            }
-            else if (a == 7)
-            {
-                songName = "7";
-                OnEnable();
-            }
-        }
     }
 }

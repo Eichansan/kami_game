@@ -19,15 +19,7 @@ public class target : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Card.sw == 3)
-        {
-            b = Card.answer;
-            
-            Card.sw = 4;
-        }
-        if (Card.sw == 4)
-        {
-            b = Card.answer;
+        
             if (type == 0)
             {
                 if (Input.GetKeyDown(KeyCode.A))
@@ -52,7 +44,7 @@ public class target : MonoBehaviour
                     }
                     else
                     {
-                        Card.sw = 5;
+                        
                     }
                 }
                 if (Input.GetKeyDown(KeyCode.UpArrow))
@@ -155,6 +147,6 @@ public class target : MonoBehaviour
                     }
                 }
             }
-        }
+        
     }
 }

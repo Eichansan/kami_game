@@ -29,6 +29,7 @@ public class Card : MonoBehaviour
 
     void Start() {
         sw = 0;
+        Debug.Log("swich is" + Card.sw);
         for (int i = start; i <= end; i++)
         {
             numbers.Add(i);
@@ -111,6 +112,7 @@ public class Card : MonoBehaviour
     {
         if(sw == 5)
         {
+            Debug.Log("swich is" + Card.sw);
             for (int i = start; i <= end; i++)
             {
                 numbers.Add(i);

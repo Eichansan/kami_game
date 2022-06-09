@@ -12,6 +12,7 @@ public class Judge : MonoBehaviour
     [SerializeField] NotesManager notesManager;
     void Update()
     {
+        
         if (Input.GetKeyDown(KeyCode.D))
         {
             if (notesManager.LaneNum[0] == 0)
@@ -56,38 +57,49 @@ public class Judge : MonoBehaviour
         {
             Instantiate(GameOverObj,new Vector3(notesManager.LaneNum[0]+1.25f,0.76f,0.15f),Quaternion.Euler(45,0,0));
         }*/
+
         }
         
         
     }
     void Judgement(float timeLag)
     {
-        if (timeLag <= 0.10)//本来ノーツをたたくべき時間と実際にノーツをたたいた時間の誤差が0.1秒以下だったら
+        if (Card.answer == target.Lock)
         {
-            Debug.Log("Perfect");
-            Debug.Log(count(100));
-            message(0);
-            deleteData();
-        }
-        else
-        {
-            if (timeLag <= 0.15)//本来ノーツをたたくべき時間と実際にノーツをたたいた時間の誤差が0.15秒以下だったら
+            if (timeLag <= 0.10)//本来ノーツをたたくべき時間と実際にノーツをたたいた時間の誤差が0.1秒以下だったら
             {
-                Debug.Log("Great");
-                Debug.Log(count(50));
-                message(1);
+                Debug.Log("Perfect");
+                Debug.Log(count(100));
+                message(0);
                 deleteData();
             }
             else
             {
-                if (timeLag <= 0.20)//本来ノーツをたたくべき時間と実際にノーツをたたいた時間の誤差が0.2秒以下だったら
+                if (timeLag <= 0.15)//本来ノーツをたたくべき時間と実際にノーツをたたいた時間の誤差が0.15秒以下だったら
                 {
-                    Debug.Log("Good");
-                    Debug.Log(count(20));
-                    message(2);
+                    Debug.Log("Great");
+                    Debug.Log(count(50));
+                    message(1);
                     deleteData();
                 }
+                else
+                {
+                    if (timeLag <= 0.20)//本来ノーツをたたくべき時間と実際にノーツをたたいた時間の誤差が0.2秒以下だったら
+                    {
+                        Debug.Log("Good");
+                        Debug.Log(count(20));
+                        message(2);
+                        deleteData();
+                    }
+                }
             }
+        }
+        else
+        {
+            message(4);
+            deleteData();
+            Debug.Log("Uncorrect");
+
         }
     }
     float GetABS(float num)//引数の絶対値を返す関数
