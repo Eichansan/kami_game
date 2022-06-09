@@ -1982,6 +1982,7 @@ MonoBehaviour:
   - {fileID: 8271520317862763965, guid: 3ece4e3e038b4dc4482f7f30ebd4176a, type: 3}
   - {fileID: 7679777070237910124, guid: 79ff9f8087a62e242823a3c64552d1f4, type: 3}
   - {fileID: 1257997340609345531, guid: e399fb48a6bc6f048bd25b0159ba1afe, type: 3}
+  - {fileID: 457687976661317660, guid: 083c40b8cd282864888ad1c91671c46f, type: 3}
   notesManager: {fileID: 1438108827}
 --- !u!1001 &1709635794
 PrefabInstance:

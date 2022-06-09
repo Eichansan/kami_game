@@ -51,9 +51,9 @@ public class Judge : MonoBehaviour
             message(3);
             deleteData();
             Debug.Log("Miss");
-            /*misscount();*/
+            /*misscount();
 
-            /*if(miss == 5)
+            if(miss == 5)
         {
             Instantiate(GameOverObj,new Vector3(notesManager.LaneNum[0]+1.25f,0.76f,0.15f),Quaternion.Euler(45,0,0));
         }*/
